@@ -54,3 +54,14 @@ const totalValue = backpackFullOfAmmo.map((ammo) => {
 })
 
 console.log(totalValue)
+
+// JS with a Dash of HTML
+const tableRows = backpackFullOfAmmo.map((ammo) => {
+    return `<tr>
+        <td>${ammo.item}</td>
+        <td>${ammo.quantity}</td>
+        <td>${ammo.priceEa}</td>
+        </tr>`
+}).join("\n")
+
+console.log(tableRows)
