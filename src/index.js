@@ -1,5 +1,5 @@
 // Functions Inside Variables and Arrow Functions
-const backpackFullOfAmmo = [
+const backpackFullOfAmmunition = [
     { item: "bullets", quantity: 10, priceEa: 0.5 },
     { item: "shotgun shells", quantity: 4, priceEa: 0.5 },
     { item: "rockets", quantity: 1, priceEa: 5.0 },
@@ -28,3 +28,29 @@ function triple(num) {
 console.log(doSomethingWithNumber(42, divideByTwo))
 console.log(doSomethingWithNumber(42, double))
 console.log(doSomethingWithNumber(42, triple))
+
+// Map Method
+const numbers = [1, 2, 3, 4, 5]
+
+const doubledNumbers = numbers.map( (number) => number * 2
+)
+
+console.log(doubledNumbers)
+
+const backpackFullOfAmmo = [
+    { item: "bullets", quantity: 10, priceEa: 0.5 },
+    { item: "shotgun shells", quantity: 4, priceEa: 0.5 },
+    { item: "rockets", quantity: 1, priceEa: 5.0 },
+    { item: "energy cell units", quantity: 20, priceEa: 0.2 },
+]
+
+function calculateOrderCost(order) {
+    return order.quantity * order.priceEa
+}
+
+const totalValue = backpackFullOfAmmo.map((ammo) => {
+    console.log(ammo)
+    return calculateOrderCost(ammo)
+})
+
+console.log(totalValue)
