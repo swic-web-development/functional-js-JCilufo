@@ -51,3 +51,15 @@ const players3 = [
 const hasFrags = players3.some((player) => player.frags)
 
 console.log(hasFrags)
+
+// Every
+const players4 = [
+    { name: "Doomguy", frags: 25, deaths: 0 },
+    { name: "Slayer", frags: 25, deaths: 1 },
+    { name: "Marine", frags: 12, deaths: 15 },
+    { name: "noob", frags: 0, deaths: 25 },
+]
+
+const allPlayersHaveMoreFragsThanDeaths = players4.every((player) => player.frags > player.deaths)
+
+console.log(allPlayersHaveMoreFragsThanDeaths)
