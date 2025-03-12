@@ -14,3 +14,16 @@ return player.frags > player.deaths
 })
 
 console.log(playersWithMoreFragsThanDeaths)
+
+// Reduce
+const players1 = [
+    { name: "Doomguy", frags: 25, deaths: 0 },
+    { name: "Slayer", frags: 25, deaths: 1 },
+    { name: "Marine", frags: 12, deaths: 15 },
+    { name: "noob", frags: 0, deaths: 25 },
+]
+
+const totalFrags = players1.reduce((total, player) => total + player.frags, 0
+)
+
+console.log(totalFrags)
