@@ -39,3 +39,15 @@ const players2 = [
 const firstPlayerWithMoreFragsThanDeaths = players2.find((player) => player.frags > player.deaths)
 
 console.log(firstPlayerWithMoreFragsThanDeaths)
+
+// Some
+const players3 = [
+    { name: "Doomguy", frags: 25, deaths: 0 },
+    { name: "Slayer", frags: 25, deaths: 1 },
+    { name: "Marine", frags: 12, deaths: 15 },
+    { name: "noob", frags: 0, deaths: 25 },
+]
+
+const hasFrags = players3.some((player) => player.frags)
+
+console.log(hasFrags)
