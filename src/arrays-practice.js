@@ -63,3 +63,15 @@ const players4 = [
 const allPlayersHaveMoreFragsThanDeaths = players4.every((player) => player.frags > player.deaths)
 
 console.log(allPlayersHaveMoreFragsThanDeaths)
+
+// Sort
+const players5 = [
+    { name: "Doomguy", frags: 25, deaths: 0 },
+    { name: "Slayer", frags: 25, deaths: 1 },
+    { name: "Marine", frags: 12, deaths: 15 },
+    { name: "noob", frags: 0, deaths: 25 },
+]
+
+const sortedPlayers = players5.sort((a, b) => b.frags - a.frags)
+
+console.log(sortedPlayers)
